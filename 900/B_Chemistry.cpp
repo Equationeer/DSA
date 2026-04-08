@@ -11,12 +11,10 @@ int main()
 		cin >> n >> k; 
 		string s;
 		cin >> s; 
-
-
 		vector<int> frequency_of_characters(26, 0);
 		for (int i = 0; i < n; i++) 
 			frequency_of_characters[s[i] - 'a']++; 
-
+		
 		long long odd_frequency = 0; 
 		for (int i = 0; i < 26; i++) 
 			odd_frequency += frequency_of_characters[i] % 2; 
