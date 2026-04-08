@@ -15,7 +15,6 @@ int main()
 		for (int i = 0; i < n; i++) 
 			frequency_of_characters[s[i] - 'a']++; 
 
-			// timepass
 		long long odd_frequency = 0; 
 		for (int i = 0; i < 26; i++) 
 			odd_frequency += frequency_of_characters[i] % 2; 
